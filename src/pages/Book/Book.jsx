@@ -2,11 +2,11 @@ import React, { use } from 'react';
 import { FaStarHalfAlt } from "react-icons/fa";
 import { Link } from 'react-router-dom';
 
-const Book = ({ singleBook }) => {
+const Book = ({ book }) => {
     // const data = use(bookPromise);
     // console.log(data);
 
-    const { bookId, bookName, author, image, rating, category, tags, yearOfPublishing } = singleBook
+    const { bookId, bookName, author, image, rating, category, tags, yearOfPublishing } = book
     return (
         <Link to={`/bookDetail/${bookId}`}>
         <div className="card bg-base-100 shadow-sm border p-6 ">
