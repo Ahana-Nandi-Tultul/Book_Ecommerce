@@ -1,9 +1,10 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Navber = () => {
     const links = <>
-    <li className='mr-2'>Home</li>
-    <li className='mr-2'>About</li>
+    <Link to='/'><li className='mr-2'>Home</li></Link>
+    <Link to='/about'><li className='mr-2'>About</li></Link>
     </>
     return (
         <div className="navbar bg-base-100 shadow-sm">
